@@ -28,6 +28,6 @@ fi
 
 docker_run="$docker_run -d -p $INPUT_HOST_PORT:$INPUT_CONTAINER_PORT mysql:$INPUT_MYSQL_VERSION --port=$INPUT_CONTAINER_PORT"
 docker_run="$docker_run --character-set-server=$INPUT_CHARACTER_SET_SERVER --collation-server=$INPUT_COLLATION_SERVER"
-docker_run="$docker_run -c 'CREATE DATABASE DSchrankaHDD'"
+#docker_run="$docker_run -c 'CREATE DATABASE DSchrankaHDD'"
 
 sh -c "$docker_run"
